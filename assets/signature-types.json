@@ -1,0 +1,75 @@
+[{
+  "name": "Order",
+  "rearg": {
+    "sell": [["tokenSell", "tokenBuy"], ["amountSell", "amountBuy"]]
+  },
+  "inputs": [{
+    "t": "address",
+    "name": "IDEX address",
+    "id": "address"
+  }, {
+    "t": "address",
+    "name": "Token to %s",
+    "id": "tokenBuy",
+    "stringMap": {
+      "sell": "sell for"
+    }
+  }, {
+    "t": "uint256",
+    "name": "Amount to %s",
+    "id": "amountBuy",
+    "adjustTo": "tokenBuy",
+    "stringMap": {
+      "sell": "sell for"
+    }
+  }, {
+    "t": "address",
+    "name": "Token to %s",
+    "id": "tokenSell",
+    "stringMap": {
+      "buy": "buy with"
+    }
+  }, {
+    "t": "uint256",
+    "name": "Amount to %s",
+    "adjustTo": "tokenSell",
+    "id": "amountSell",
+    "stringMap": {
+      "buy": "buy with"
+    }
+  }, {
+    "t": "uint256",
+    "name": "Block expiry (unused)",
+    "id": "expiration"
+  }, {
+    "t": "uint256",
+    "name": "Maker order nonce",
+    "id": "orderNonce"
+  }, {
+    "t": "address",
+    "name": "Maker address",
+    "id": "maker"
+  }]
+}, {
+  "name": "Trade",
+  "inputs": [{
+    "t": "bytes32",
+    "name": "Maker order hash",
+    "id": "orderHash"
+  }, {
+    "t": "uint256",
+    "name": "Amount to %s",
+    "id": "amount",
+    "stringMap": {
+      "buy": "buy with"
+    }
+  }, {
+    "t": "address",
+    "name": "Taker address",
+    "id": "taker"
+  }, {
+    "t": "uint256",
+    "name": "IDEX trade nonce",
+    "id": "tradeNonce"
+  }]
+}]

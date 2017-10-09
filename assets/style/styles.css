@@ -1,0 +1,222 @@
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 25px
+}
+
+ul,ol {
+    margin-bottom: 25px
+}
+
+ul li,ol li {
+    line-height: 28px
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+code {
+    vertical-align: bottom
+}
+
+*,*:before,*:after {
+    box-sizing: inherit
+}
+
+body {
+    background: #fff;
+    color: #091725;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #1478A1;
+}
+
+button, input[type="submit"] {
+  border: none;
+}
+button:focus, input[type="submit"]:focus {
+  outline: none;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+.main {
+    margin: 30px;
+}
+
+.main .header {
+    height: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-image: linear-gradient(to top, #1478A1 0%, #6991c7 100%);
+    border-radius: 3px;
+}
+
+.main .header h1 {
+    line-height: 200px;
+    color: #fff;
+}
+
+.input-data {
+    margin-bottom: 15px;
+}
+
+.input-data textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.action-button {
+    margin-bottom: 30px;
+}
+.action-button button {
+    margin-right: 10px;
+}
+
+.token-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.add-token-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.add-token-container .add-form {
+    width: 100%;
+}
+.add-token-container .add-form label {
+    display: block;
+    width: 100%;
+}
+.add-token-container .add-form input {
+    display: block;
+    margin-bottom: 15px;
+}
+.add-token-container .add-form input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+.add-token-container .add-form .ui--button {
+    width: 30%;
+}
+
+.saved-token-container {
+    width: 100%;
+}
+
+.saved-token-container a {
+    cursor: pointer;
+}
+
+.saved-token-container table  {
+    border-spacing: 0;
+    width: 100%;
+}
+.saved-token-container th, .saved-token-container td  {
+    text-align: left;
+}
+
+.saved-token-container td {
+    font-size: 14px;
+}
+
+
+div.left-container {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+div.right-container {
+    float: right;
+    width: 50%;
+    padding: 15px;
+}
+
+.notification {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.notification div {
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.notification .match {
+  background: #E3F2DF;
+  color: #7B9775;
+}
+.notification .mismatch {
+  background: #EDD9D8;
+  color: #EF6B66;
+}
+
+.results-container {
+
+}
+.results-container .type-label {
+    font-weight: 600;
+}
+
+.results-container .label {
+    font-weight: 600;
+}
+
+.results-container .full-info {
+}
+
+.ui--button,button {
+    position: relative;
+    display: inline-block;
+    padding: 6.25px 25px;
+    background: #1478A1;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    min-height: 44px;
+    line-height: 44px;
+    text-align: center;
+    transition: background 100ms ease-out;
+    cursor: pointer;
+}
+
+.ui--button:hover,button:hover {
+    background: rgba(17,101,136, 1.0);
+}
+
+.ui--button:active,button:active {
+    background: rgba(0,104,139, 0.7);
+}
